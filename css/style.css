@@ -1,0 +1,28 @@
+:root{
+	--primary: #1ABC9C;
+	--secundary: #2C3E50;
+	--thertry: #1A252F;
+}
+body{
+	font-family: 'Metropolis', sans-serif;
+}
+.bg-primary2{ background-color: var(--primary); }
+.bg-secundary{ background-color: var(--secundary); }
+.bg-thertry{ background-color: var(--thertry); }
+
+.navigation a{transition: 300ms all ease;}
+.navigation a:focus, .navigation a:hover{
+	color: var(--primary) !important;
+}
+.wimg-avatar{max-width: 250px;}
+.masterhead h1{
+	font-size: 4rem;
+}
+.masterhead .line-start i{font-size: 2rem;}
+.line-start:before, .line-start:after {
+	content: " ";
+	border: 2px solid #FFF;
+	min-width: 100px;
+	display: block;
+	border-radius: 8px;
+}
