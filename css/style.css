@@ -8,12 +8,17 @@ img{max-width:100%;}
 .navigation a:focus, .navigation a:hover{color: var(--primary) !important; }
 .wimg-avatar{max-width: 250px;}
 .masterhead h1{font-size: 4rem; }
-.masterhead .line-start i, .portafolio .line-start i, .about .line-start i{font-size: 2rem;}
+.masterhead .line-start i, .portafolio .line-start i, .about .line-start i, .contact i{font-size: 2rem;}
 .line-start:before, .line-start:after {content: " ";border: 2px solid #FFF;min-width: 100px;display: block;border-radius: 8px;}
 .line-start__clSecundary:before, .line-start__clSecundary:after{border-color: var(--secundary);}
 .colorSecundary{color:var(--secundary);}
-.title-section{font-size: 2.8rem;}
+.title-section{font-size: 3rem;}
 .portafolio-item{visibility: hidden;background-color: var(--primary); transition: .3s all ease; opacity: 0;}
 .portafolio-item:hover{background-color: rgb(26 188 156 / 80%); opacity: 1;}
 .portafolio-link:hover > .portafolio-item{visibility:visible;}
 .portafolio-item i{font-size: 8rem;}
+.contact form input:focus, .contact form textarea:focus{border-bottom-color: var(--primary) !important;}
+.contact form + button{font-weight: 500;}
+.contact .form-floating>.form-control, .contact .form-floating>.form-select {
+	height: calc(4.5rem + 2px);
+}
