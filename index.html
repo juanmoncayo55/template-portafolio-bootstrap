@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Portafolio Theme bootstrap</title>
 	<link href="./css/bootstrap.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="./css/bootstrap-icons.min.css">
 	<link href="https://fonts.cdnfonts.com/css/metropolis-2" rel="stylesheet">
@@ -14,20 +14,31 @@
 		thertry: #1A252F;
 	-->
 </head>
-<body>
-	<header class="bg-secundary py-4">
+<body data-bs-spy="scroll" data-bs-target="#header" data-bs-offset="0">
+	<header id="header" class="header bg-secundary py-3 fixed-top">
 		<div class="container">
 			<div class="row">
-				<div class="col-4 d-flex align-items-center">
+				<div class="col-4 d-flex align-items-center px-sm-0">
 					<a href="#" class="text-decoration-none">
-						<h2 class="fs-3 fw-bolder text-white m-0">START BOOTSTRAP</h2>
+						<h2 class="fs-3 fw-bolder text-white m-0 title">START BOOTSTRAP</h2>
 					</a>
 				</div>
-				<div class="col-8 d-flex flex-row justify-content-end align-items-center">
-					<nav class="nav gap-3 navigation">
-						<a href="#" class="nav-link text-uppercase text-white fw-bold">portafolio</a>
-						<a href="#" class="nav-link text-uppercase text-white fw-bold">about</a>
-						<a href="#" class="nav-link text-uppercase text-white fw-bold">contact</a>
+				<nav id="navigation-n" class="col-8 nav gap-3 navigation justify-content-end">
+					<a href="#portafolio" class="nav-link text-uppercase text-white fw-bold">portafolio</a>
+					<a href="#about" class="nav-link text-uppercase text-white fw-bold">about</a>
+					<a href="#contact" class="nav-link text-uppercase text-white fw-bold">contact</a>
+				</nav>
+				<div id="toggle-navbar" class="col-8 d-flex flex-row justify-content-end align-items-center">
+					<button class="navbar-toggler bg-primary2 b-boton-mb d-flex align-items-center justify-content-center py-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+						<p class="text-white text-uppercase fs-6x m-0 me-1 lh-mb-b">menu</p>
+						<i class="bi bi-list fs-6 text-white lh-mb-b"></i>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse p-0 mt-4" id="navbarText">
+					<nav class="nav gap-3 navigation flex-column">
+						<a href="#portafolio" class="nav-link text-uppercase text-white fw-bold px-0">portafolio</a>
+						<a href="#about" class="nav-link text-uppercase text-white fw-bold px-0">about</a>
+						<a href="#contact" class="nav-link text-uppercase text-white fw-bold px-0">contact</a>
 					</nav>
 				</div>
 			</div>
@@ -35,22 +46,22 @@
 	</header>
 
 	<section class="masterhead bg-primary2 py-5">
-		<div class="container d-flex flex-column align-items-center mt-5">
+		<div class="container d-flex flex-column align-items-center">
 			<img src="./images/avatar.svg" class="wimg-avatar" />
-			<h1 class="text-white fw-bold text-uppercase my-4">start bootstrap</h1>
+			<h1 class="text-center text-white fw-bold text-uppercase my-4 title">start bootstrap</h1>
 			<div class="line-start d-flex align-items-center gap-3 mb-4">
 				<i class="bi bi-star-fill text-white"></i>
 			</div>
-			<p class="text-white fs-4 fst-normal mb-5">Graphic Artist - Web Designer - Illustrator</p>
+			<p class="text-center text-white fs-4 fst-normal mb-5 subtitle">Graphic Artist - Web Designer - Illustrator</p>
 		</div>
 	</section>
 
-	<section class="portafolio py-5 d-flex flex-column align-items-center my-5">
+	<section id="portafolio" class="portafolio py-5 d-flex flex-column align-items-center my-5 section">
 		<p class="h1 text-center colorSecundary fw-bold text-uppercase title-section">Portafolio</p>
 		<div class="line-start d-flex align-items-center gap-3 mb-4 line-start__clSecundary">
 			<i class="bi bi-star-fill colorSecundary"></i>
 		</div>
-		<div class="container gx-5">
+		<div class="container">
 			<div class="row gy-5">
 				<div class="col-lg-4 col-md-6 col-sm-12 ">
 					<a href="#" class="portafolio-link position-relative d-block">
@@ -104,7 +115,7 @@
 		</div>
 	</section>
 
-	<section class="about bg-primary2 py-5">
+	<section id="about" class="about bg-primary2 py-5 section">
 		<p class="h1 text-center text-white fw-bold text-uppercase title-section">About</p>
 		<div class="line-start d-flex align-items-center justify-content-center gap-3 mb-4">
 			<i class="bi0 bi-star-fill text-white"></i>
@@ -125,7 +136,7 @@
 		</div>
 	</section>
 
-	<section class="contact my-5">
+	<section id="contact" class="contact my-5 section">
 		<p class="h1 text-center colorSecundary fw-bold text-uppercase title-section">Contact Me</p>
 		<div class="line-start d-flex justify-content-center align-items-center gap-3 mb-4 line-start__clSecundary">
 			<i class="bi bi-star-fill colorSecundary"></i>
@@ -159,7 +170,70 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="foot-in bg-secundary py-5">
+		<div class="container py-4">
+			<div class="row justify-content-center">
+				<div class="col-lg-4 mb-5 mb-lg-0 d-flex flex-column align-items-center">
+					<p class="h4 text-uppercase text-white fw-bold text-center">location</p>
+					<p class="fs-5 text-white text-center lead mt-2">2215 John Daniel Drive<br>Clark, MO 65243</p>
+				</div>
+				<div class="socialnetwork col-lg-4 col-md-12 col-sm-8 mb-5 mb-lg-0 d-flex flex-column align-items-center">
+					<p class="h4 text-uppercase text-white fw-bold text-center">around the web</p>
+					<div class="container-md mt-3 p-0">
+						<div class="row justify-content-center align-items-center align-items-center gx-5">
+							<div class="col-2 col-md-1 col-lg-2 col-sm-2 p-0 d-flex justify-content-center">
+								<a href="#" class="d-flex justify-content-center align-items-center border border-2">
+									<img src="images/face.svg" />
+								</a>
+							</div>
+							<div class="col-2 col-md-1 col-lg-2 col-sm-2 p-0 d-flex justify-content-center">
+								<a href="#" class="d-flex justify-content-center align-items-center border border-2">
+									<img src="images/twiiter.svg" />
+								</a>
+							</div>
+							<div class="col-2 col-md-1 col-lg-2 col-sm-2 p-0 d-flex justify-content-center">
+								<a href="#" class="d-flex justify-content-center align-items-center border border-2">
+									<img src="images/linkedin.svg" />
+								</a>
+							</div>
+							<div class="col-2 col-md-1 col-lg-2 col-sm-2 p-0 d-flex justify-content-center">
+								<a href="#" class="d-flex justify-content-center align-items-center border border-2">
+									<img src="images/startbootstrap.svg" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex flex-column align-items-center">
+					<p class="h4 text-uppercase text-white fw-bold text-center">about freelancer</p>
+					<p class="licensed text-white text-center lead mt-2">Freelance is a free to use, MIT licensed<br>Bootstrap theme created by <a href="#" class="c-primary text-decoration-underline licended-a">Start Bootstrap</a>.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer bg-thertry py-4">
+		<p class="fs-6 text-center text-white m-0">Copyright &copy Your Website 2023</p>
+	</footer>
 </body>
+	<script src="./js/jquery.min.js"></script>
 	<script src="./js/popper.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
+
+	<!--<script>
+		$(window).scroll(function() {
+			/* affix after scrolling 100px */
+			if ($(document).scrollTop() > 1) {
+				$('.header').removeClass('py-4');
+				$('.header').addClass('fixed-top py-3');
+				$('.header h2').addClass("fs-4")
+				$('.header h2').removeClass("fs-2")
+			} else {
+				$('.header').addClass('py-4');
+				$('.header').removeClass('fixed-top py-3');
+				$('.header h2').removeClass("fs-4")
+				$('.header h2').addClass("fs-2")
+			}
+		});
+	</script>-->
 </html>
